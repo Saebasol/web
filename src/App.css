@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.App {
+    background-color: rgb(25 23 36 / 50%);
+    color: #e0def4;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.Container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    padding: 15% 15%;
+}
+
+
+.Landing {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.SubTitle {
+    animation-name: changeColor;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    color: #eb6f92;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.TeamName {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.Description {
+    font-size: 1.5rem;
+}
+
+@supports (-webkit-touch-callout: none) {
+    .App {
+        min-height: -webkit-fill-available;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Landing {
+        width: auto;
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        color: #eb6f92;
+    }
+
+    17% {
+        color: #f6c177;
+    }
+
+    34% {
+        color: #ebbcba;
+    }
+
+    52% {
+        color: #31748f;
+    }
+
+    69% {
+        color: #9ccfd8;
+    }
+
+    86% {
+        color: #c4a7e7;
+    }
+
+    100% {
+        color: #eb6f92;
+    }
+
+}
