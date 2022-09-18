@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <video muted loop autoPlay>
-        <source src="/public/pixabay.mp4" type="video/mp4" />
+        <source src="pixabay.mp4" type="video/mp4" />
       </video>
       <div className='Container'>
         <div className='Landing'>
